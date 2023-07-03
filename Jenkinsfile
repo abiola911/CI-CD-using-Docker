@@ -3,7 +3,7 @@ pipeline {
 	
 	  tools
     {
-       maven "Maven"
+       maven "Maven 3.9.0"
     }
  stages {
       stage('checkout') {
@@ -13,7 +13,7 @@ pipeline {
              
           }
         }
-	 stage('Execute Maven') {
+	 stage('Maven 3.9.0') {
            steps {
              
                 sh 'mvn package'             
